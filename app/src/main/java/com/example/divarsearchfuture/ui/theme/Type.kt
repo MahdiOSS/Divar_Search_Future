@@ -12,7 +12,9 @@ import com.example.divarsearchfuture.R
 val Typography = Typography(
     bodyMedium = TextStyle(
         fontFamily = FontFamily(
-            Font(R.font.dana,)
+            Font(R.font.dana,),
+            Font(R.font.dana,),
+            Font(R.font.dana,),
         ),
         fontWeight = FontWeight.Normal,
         fontSize = 14.sp,
@@ -21,7 +23,9 @@ val Typography = Typography(
     ),
     bodyLarge = TextStyle(
         fontFamily = FontFamily(
-            Font(R.font.dana,)
+            Font(R.font.dana,),
+            Font(R.font.dana,),
+            Font(R.font.dana,),
         ),
         fontWeight = FontWeight.Normal,
         fontSize = 16.sp,

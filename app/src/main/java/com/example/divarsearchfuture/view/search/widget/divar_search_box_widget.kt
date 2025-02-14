@@ -15,6 +15,8 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.foundation.text.KeyboardActions
+import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.rounded.ArrowBack
 import androidx.compose.material.icons.rounded.Clear
@@ -39,6 +41,8 @@ import androidx.compose.ui.unit.LayoutDirection
 import androidx.compose.ui.unit.dp
 import androidx.compose.runtime.*
 import androidx.compose.ui.draw.alpha
+import androidx.compose.ui.text.input.ImeAction
+import androidx.compose.ui.text.input.PlatformImeOptions
 
 @Composable
 fun DivarSearchBoxWidget(
@@ -79,6 +83,7 @@ fun DivarSearchBoxWidget(
                     cursorColor = Color(0xffaf3636)
                 ),
                 onValueChange = onValueChange,
+                keyboardOptions = KeyboardOptions.Default.copy(imeAction = ImeAction.Search)
             )
 
             IconButton(onClick = onClear, modifier = Modifier.alpha(animate)) {
